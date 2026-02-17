@@ -9,7 +9,7 @@ Description=OpenClaw gateway (rootless Podman)
 Image=openclaw:local
 ContainerName=openclaw
 UserNS=keep-id
-Volume={{OPENCLAW_HOME}}/.openclaw:/home/node/.openclaw
+Volume={{OPENCLAW_HOME}}/.openclaw:/home/node/.openclaw:z
 EnvironmentFile={{OPENCLAW_HOME}}/.openclaw/.env
 Environment=HOME=/home/node
 Environment=TERM=xterm-256color
